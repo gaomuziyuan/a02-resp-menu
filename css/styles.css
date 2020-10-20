@@ -1,0 +1,46 @@
+ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: cyan;
+	flex-wrap: wrap;
+	position: relative;
+}
+header a {
+	text-decoration: none;
+}
+nav {
+	display: none;
+	width: 100%;
+	top: 100%;
+	position: absolute;
+	background-color: orange;
+}
+nav ul {
+	background-color: yellow;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+li {
+	flex-basis: 50%;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.menu-btn {
+		display: none;
+	}
+	nav {
+		display: block !important;
+		position: static;
+		width: 50%;
+	}
+	li {
+		flex-basis: auto;
+	}
+}
